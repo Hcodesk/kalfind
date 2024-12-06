@@ -6,7 +6,6 @@ import Quote from "@/components/Quote";
 import CardsSection from "@/components/CardsSection";
 import ServicesSection from "@/components/ServicesSection";
 import LearningSection from "@/components/LearningSection";
-import SvgComponent from "@/components/HeroSVG";
 import Lenis from "lenis"
 import {useEffect} from 'react'
 
