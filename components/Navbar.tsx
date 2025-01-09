@@ -15,18 +15,23 @@ export default function Navbar() {
         <span>
           <Image src="/logo.svg" width={67.43} height={49.9} alt=''/>
         </span>
-        <span>
+        <span className="hidden xl:flex">
           <Link href="#"> S'inscrire</Link>
         </span>
-        <span>
+        <span className="hidden xl:flex">
           <Link href="#">Connexion</Link>
         </span>
       </div>
 
-      <div className="ml-auto">
+      <div className="hidden xl:flex ml-auto">
         <ShineButton>
            Devenir prestataire
         </ShineButton>
+      </div>
+      <div className="bg-red rounded-lg w  ">
+          <button>
+              <Image src="/hamburgerIcon.svg" width={24} height={24} alt="menu"/>
+          </button>
       </div>
     </motion.nav>
   );

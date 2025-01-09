@@ -22,12 +22,12 @@ export default function Quote() {
   }, [])
 
   return (
-    <motion.section
+    <motion.div
     ref={cardRef}
       onMouseEnter={() => setIsHovering(true)}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setIsHovering(false)}
-     className="flex relative overflow-hidden py-[64px] my-[64px]  bg-quoteBg h-[506px] px-[126px] bg-no-repeat min-w-[1344px] "
+     className="flex relative overflow-hidden py-[64px] mx-auto border bg-center rounded-xl bg-quoteBg h-[506px] px-[126px] bg-no-repeat  xl:w-full 2xl:min-w-[1344px] "
     initial={{ y:100 , opacity:0.5, filter:"blur(5px)" }} whileInView={{y:0, opacity:1, filter:"blur(0px) "}} 
     transition={{delay:0.4, duration:0.6}} viewport={{once:true}}>
       <div className="flex flex-col gap-[48.53px] ">
@@ -61,6 +61,6 @@ export default function Quote() {
           }}
         >Travailleurs Qualifiés🔨</div>
       )}
-    </motion.section>
+    </motion.div>
   );
 }
